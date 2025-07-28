@@ -68,6 +68,21 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.nhf).setOnClickListener {
             playSound(R.raw.nhf)
         }
+        findViewById<Button>(R.id.aa).setOnClickListener {
+            playSound(R.raw.aa)
+        }
+        findViewById<Button>(R.id.ni2).setOnClickListener {
+            playSound(R.raw.ni2)
+        }
+        findViewById<Button>(R.id.gan).setOnClickListener {
+            playSound(R.raw.gan)
+        }
+        findViewById<Button>(R.id.ma).setOnClickListener {
+            playSound(R.raw.ma2)
+        }
+        findViewById<Button>(R.id.ganma).setOnClickListener {
+            playSound(R.raw.ganma)
+        }
     }
 
     private fun playSound(resId: Int) {
