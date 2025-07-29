@@ -33,7 +33,7 @@ jobs:
       run: ./gradlew assembleDebug
       
     - name: mv app-debug.apk
-      run: mv cxk/app/build/outputs/apk/debug/app-debug.apk /out/app-debug.apk
+      run: mv app/build/outputs/apk/debug/app-debug.apk /out/app-debug.apk
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
