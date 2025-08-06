@@ -1,201 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/amige"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="9dp"
-        android:text="@string/amagi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gan"
-        app:layout_constraintTop_toBottomOf="@+id/lq" />
+            android:id="@+id/ji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ji"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/ni"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="7dp" />
 
     <Button
-        android:id="@+id/ngmhhy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:text="@string/ngmhhy"
-        app:layout_constraintEnd_toStartOf="@+id/aa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ngm" />
+            android:id="@+id/nhf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nhf"
+            app:layout_constraintTop_toBottomOf="@+id/amige"
+            app:layout_constraintStart_toEndOf="@+id/ganma"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/tai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:text="@string/tai"
-        app:layout_constraintEnd_toStartOf="@+id/mei"
-        app:layout_constraintStart_toEndOf="@+id/ni"
-        app:layout_constraintTop_toTopOf="@+id/ni" />
+            android:id="@+id/ngmhhy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ngmhhy"
+            app:layout_constraintTop_toBottomOf="@+id/ngm"
+            app:layout_constraintEnd_toStartOf="@+id/aa"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp" />
 
     <Button
-        android:id="@+id/ji"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="62dp"
-        android:text="@string/ji"
-        app:layout_constraintEnd_toStartOf="@+id/ni"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/rap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rap"
+            app:layout_constraintTop_toBottomOf="@+id/tai"
+            app:layout_constraintStart_toEndOf="@+id/tiao"
+            app:layout_constraintEnd_toStartOf="@+id/lq"
+            android:layout_marginEnd="2dp" />
 
     <Button
-        android:id="@+id/ni"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:text="@string/ni"
-        app:layout_constraintEnd_toStartOf="@+id/tai"
-        app:layout_constraintStart_toEndOf="@+id/ji"
-        app:layout_constraintTop_toTopOf="@+id/ji" />
+            android:id="@+id/amige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amagi"
+            app:layout_constraintTop_toBottomOf="@+id/lq"
+            app:layout_constraintStart_toEndOf="@+id/gan"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/mei"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="9dp"
-        android:text="@string/mei"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tai"
-        app:layout_constraintTop_toTopOf="@+id/tai" />
+            android:id="@+id/ganma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ganma"
+            app:layout_constraintTop_toBottomOf="@+id/gan"
+            app:layout_constraintStart_toEndOf="@+id/ma"
+            app:layout_constraintEnd_toStartOf="@+id/nhf"
+            android:layout_marginEnd="7dp" />
 
     <Button
-        android:id="@+id/chang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:text="@string/chang"
-        app:layout_constraintEnd_toStartOf="@+id/tiao"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ji" />
+            android:id="@+id/ngm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ngm"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toBottomOf="@+id/music"
+            app:layout_constraintEnd_toStartOf="@+id/ma"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="5dp" />
 
     <Button
-        android:id="@+id/tiao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:text="@string/tiao"
-        app:layout_constraintEnd_toStartOf="@+id/rap"
-        app:layout_constraintStart_toEndOf="@+id/chang"
-        app:layout_constraintTop_toBottomOf="@+id/ni" />
+            android:id="@+id/ma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ma"
+            app:layout_constraintTop_toBottomOf="@+id/ni2"
+            app:layout_constraintStart_toEndOf="@+id/ngm"
+            app:layout_constraintEnd_toStartOf="@+id/ganma"
+            android:layout_marginEnd="9dp" />
 
     <Button
-        android:id="@+id/rap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:text="@string/rap"
-        app:layout_constraintEnd_toStartOf="@+id/lq"
-        app:layout_constraintStart_toEndOf="@+id/tiao"
-        app:layout_constraintTop_toBottomOf="@+id/tai" />
+            android:id="@+id/tiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tiao"
+            app:layout_constraintTop_toBottomOf="@+id/ni"
+            app:layout_constraintStart_toEndOf="@+id/chang"
+            app:layout_constraintEnd_toStartOf="@+id/rap"
+            android:layout_marginEnd="1dp" />
 
     <Button
-        android:id="@+id/lq"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="9dp"
-        android:text="@string/lq"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rap"
-        app:layout_constraintTop_toBottomOf="@+id/mei" />
+            android:id="@+id/yhhmagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yhhmagi"
+            app:layout_constraintTop_toBottomOf="@+id/nhf"
+            app:layout_constraintStart_toEndOf="@+id/aa"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/music"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:text="@string/music"
-        app:layout_constraintEnd_toStartOf="@+id/ni2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chang" />
+            android:id="@+id/lq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lq"
+            app:layout_constraintTop_toBottomOf="@+id/mei"
+            app:layout_constraintStart_toEndOf="@+id/rap"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/yhhmagi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="3dp"
-        android:text="@string/yhhmagi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/aa"
-        app:layout_constraintTop_toBottomOf="@+id/nhf" />
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/chang"
+            app:layout_constraintEnd_toStartOf="@+id/ni2" />
 
     <Button
-        android:id="@+id/ngm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:text="@string/ngm"
-        app:layout_constraintEnd_toStartOf="@+id/ma"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/music" />
+            android:id="@+id/chang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chang"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/ji"
+            app:layout_constraintEnd_toStartOf="@+id/tiao" />
 
     <Button
-        android:id="@+id/nhf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:text="@string/nhf"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ganma"
-        app:layout_constraintTop_toBottomOf="@+id/amige" />
+            android:id="@+id/tai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tai"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toEndOf="@+id/ni"
+            app:layout_constraintEnd_toStartOf="@+id/mei"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="2dp" />
 
     <Button
-        android:id="@+id/aa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/aa"
-        app:layout_constraintEnd_toStartOf="@+id/yhhmagi"
-        app:layout_constraintStart_toEndOf="@+id/ngmhhy"
-        app:layout_constraintTop_toBottomOf="@+id/ma" />
+            android:id="@+id/ni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ni"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toEndOf="@+id/ji"
+            app:layout_constraintEnd_toStartOf="@+id/tai"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="1dp" />
 
     <Button
-        android:id="@+id/ni2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:text="@string/ni2"
-        app:layout_constraintEnd_toStartOf="@+id/gan"
-        app:layout_constraintStart_toEndOf="@+id/music"
-        app:layout_constraintTop_toBottomOf="@+id/tiao" />
+            android:id="@+id/ni2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ni2"
+            app:layout_constraintTop_toBottomOf="@+id/tiao"
+            app:layout_constraintStart_toEndOf="@+id/music"
+            app:layout_constraintEnd_toStartOf="@+id/gan"
+            android:layout_marginEnd="1dp" />
 
     <Button
-        android:id="@+id/gan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:text="@string/gan"
-        app:layout_constraintEnd_toStartOf="@+id/amige"
-        app:layout_constraintStart_toEndOf="@+id/ni2"
-        app:layout_constraintTop_toBottomOf="@+id/rap" />
+            android:id="@+id/gan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gan"
+            app:layout_constraintTop_toBottomOf="@+id/rap"
+            app:layout_constraintStart_toEndOf="@+id/ni2"
+            app:layout_constraintEnd_toStartOf="@+id/amige"
+            android:layout_marginEnd="2dp" />
 
     <Button
-        android:id="@+id/ma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="9dp"
-        android:text="@string/ma"
-        app:layout_constraintEnd_toStartOf="@+id/ganma"
-        app:layout_constraintStart_toEndOf="@+id/ngm"
-        app:layout_constraintTop_toBottomOf="@+id/ni2" />
+            android:id="@+id/aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aa"
+            app:layout_constraintTop_toBottomOf="@+id/ma"
+            app:layout_constraintStart_toEndOf="@+id/ngmhhy"
+            app:layout_constraintEnd_toStartOf="@+id/yhhmagi" />
 
     <Button
-        android:id="@+id/ganma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="7dp"
-        android:text="@string/ganma"
-        app:layout_constraintEnd_toStartOf="@+id/nhf"
-        app:layout_constraintStart_toEndOf="@+id/ma"
-        app:layout_constraintTop_toBottomOf="@+id/gan" />
+            android:id="@+id/mei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mei"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toEndOf="@+id/tai"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="9dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
