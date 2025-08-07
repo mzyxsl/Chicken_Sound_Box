@@ -4,6 +4,7 @@ import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.appbar.MaterialToolbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
         findViewById<Button>(R.id.amige).setOnClickListener {
             playSound(R.raw.amagi)
@@ -82,6 +85,9 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.ganma).setOnClickListener {
             playSound(R.raw.ganma)
+        }
+        findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.stopbutton) .setOnClickListener{
+            currentPlayer?.release()
         }
     }
 

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">鸡乐盒</string>
     <string name="amagi">amagi</string>
-    <string name="ngmhhy">你干嘛哈哈哟</string>
+    <string name="ngmhhy">你干嘛哟</string>
     <string name="ji">鸡</string>
     <string name="ni">你</string>
     <string name="tai">太</string>
@@ -12,12 +12,13 @@
     <string name="rap">rap</string>
     <string name="lq">篮球</string>
     <string name="music">music</string>
-    <string name="yhhmagi">哟哈哈嘛干你</string>
+    <string name="yhhmagi">哟嘛干你</string>
     <string name="ngm">你干嘛</string>
     <string name="nhf">你好烦</string>
     <string name="aa">啊~</string>
     <string name="gan">干</string>
     <string name="ma">嘛</string>
     <string name="ganma">干嘛</string>
-    <string name="ni2">你</string>
+    <string name="ni2">你~</string>
+    <string name="stop">停止</string>
 </resources>
