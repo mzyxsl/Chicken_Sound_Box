@@ -25,7 +25,7 @@ Linux
 
 ```bash
 git clone https://github.com/mzyxsl/Chicken_Sound_Box.git
-cd cd Chicken_Sound_Box
+cd Chicken_Sound_Box
 chmod +x gradlew
 ./gradlew app:assembleDebug
 ```
