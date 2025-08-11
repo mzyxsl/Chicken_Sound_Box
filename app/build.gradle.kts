@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.mzyxsl.cxk"
-        minSdk = 23
+        minSdk = 19
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
