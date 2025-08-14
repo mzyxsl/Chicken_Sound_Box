@@ -8,13 +8,18 @@
 
 安卓5.0-安卓16
 
+## 开发环境
++ Android Studio(IntelliJ IDEA)
++ Gradle 8.13
++ Java 21
+
 ## 构建
 
 JDK版本:Java 21
 
 Windows
 
-```bash
+```cmd
 git clone https://github.com/mzyxsl/Chicken_Sound_Box.git
 cd Chicken_Sound_Box
 gradlew app:assembleDebug
@@ -24,6 +29,6 @@ Linux
 ```bash
 git clone https://github.com/mzyxsl/Chicken_Sound_Box.git
 cd Chicken_Sound_Box
-chmod +x gradlew
+chmod +x gradlew  # 首次执行需要给执行权限
 ./gradlew app:assembleDebug
 ```
