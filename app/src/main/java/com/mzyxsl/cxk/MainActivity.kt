@@ -1,9 +1,13 @@
 package com.mzyxsl.cxk
 
 import android.media.MediaPlayer
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.core.view.WindowInsetsCompat
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.ViewCompat
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.color.DynamicColors
 
@@ -14,7 +18,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         applyDynamicColorIfpossible()
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.isNavigationBarContrastEnforced = false
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main))  { v, insets ->
+            val systemBars =
+                insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
