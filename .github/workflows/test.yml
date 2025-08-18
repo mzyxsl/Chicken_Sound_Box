@@ -1,0 +1,31 @@
+name: PR test
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+    - uses: actions/checkout@v4
+    - name: set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v4
+      with:
+       gradle-version: '8.13'
+
+    - name: Build Debug APK
+      run: gradle app:assembleDebug
