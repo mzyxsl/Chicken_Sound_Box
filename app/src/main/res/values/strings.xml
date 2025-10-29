@@ -21,4 +21,6 @@
     <string name="ganma">干嘛</string>
     <string name="ni2">你~</string>
     <string name="stop">停止</string>
+    <string name="uninstall_title">你卸载你大坝</string>
+    <string name="uninstall_content">怎么对你家哥哥的，你怎么能这样呢？ \n \n(还别说小米这接口还挺好用)</string>
 </resources>

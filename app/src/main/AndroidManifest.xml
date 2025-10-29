@@ -11,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cxk">
+        <meta-data
+                android:name="app_description_title"
+                android:resource="@string/uninstall_title" />
+        <meta-data
+                android:name="app_description_content"
+                android:resource="@string/uninstall_content" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
